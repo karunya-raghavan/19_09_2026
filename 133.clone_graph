@@ -7,9 +7,7 @@ public:
         {
             return NULL;
         }
-        
-    
-        // Also, if we create a copy, then being a good neighbor, we find whether our neighbor have a copy or not, so we will travel all around our adjcant.
+      
         
         if(mp.find(node) == mp.end()) // if not present in map
         {
