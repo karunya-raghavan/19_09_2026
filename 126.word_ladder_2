@@ -1,24 +1,3 @@
 
-        path.pop_back();
-    }
-}
-vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-   
-    int n=wordList.size(),start=-1,end=-1;
-    vector<vector<string>> ANS;
-    for(int i=0;i<n;i++){
-        if(wordList[i]==beginWord)
-            start=i;
-        if(wordList[i]==endWord)
-            end=i;
-    }
-    
-   
-    if(end==-1)
-        return ANS;
-    
-    if(start==-1){
-        wordList.emplace(wordList.begin(),beginWord);
-        start=0;
         end++;
         n
