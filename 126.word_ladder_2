@@ -1,25 +1,4 @@
 
-        for(int u:g[x]){
-            if(dist[u]>dist[x]+1){
-                dist[u]=dist[x]+1;
-                q.push(u);
-                parent[u].clear();
-                parent[u].push_back(x);
-            }
-            else if(dist[u]==dist[x]+1)
-                parent[u].push_back(x);
-        }
-    }
-}
-void shortestPaths(vector<vector<int>> &Paths, vector<int> &path, vector<int> parent[],int node){
-    if(node==-1){
-        
-        Paths.push_back(path);
-        return ;
-    }
-    for(auto u:parent[node]){
-        path.push_back(u);
-        shortestPaths(Paths,path,parent,u);
         path.pop_back();
     }
 }
