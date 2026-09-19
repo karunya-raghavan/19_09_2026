@@ -7,7 +7,10 @@ public:
         {
             return NULL;
         }
-      
+        
+        // for a node, we will check whether we already creates a copy of thiis or not. If it is present in map that means we already creates a copy of this.
+        //But if not present in map, that means we have not a copy of this.
+        // Also, if we create a copy, then being a good neighbor, we find whether our neighbor have a copy or not, so we will travel all around our adjcant.
         
         if(mp.find(node) == mp.end()) // if not present in map
         {
