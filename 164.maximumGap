@@ -21,9 +21,4 @@ class Solution(object):
         max_gap = 0
         prev_max = min_num
 
-        for bucket in buckets:
-            if bucket[0] is not None:
-                max_gap = max(max_gap, bucket[0] - prev_max)
-                prev_max = bucket[1]
-
-        return max_gap
+        f
